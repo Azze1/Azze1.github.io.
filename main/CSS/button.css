@@ -1,0 +1,28 @@
+#Contaner-Button {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+#Main-Button {
+    display: inline-block;
+    padding: 20px 239px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d3b7d4;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+    margin-top: 5px;
+}
+
+
+#Main-Button:active {
+        transform: font-size: 60px;
+        transform: scaleX(1.1);
+        box-shadow: 0 2px 4px rgba(0, 100, 50, 0.5);
+}
+
