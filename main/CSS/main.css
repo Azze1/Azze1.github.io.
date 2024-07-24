@@ -8,50 +8,14 @@
             margin: 0;
             background-color: #f0f0f0;
             background-image: url('https://raw.githubusercontent.com/Azze1/Azze.github.io/main/img/BackGraund.png');
+            user-select: none; /* This prevents text selection */
+            -webkit-user-select: none; /* For Safari */
+            -moz-user-select: none; /* For Firefox */
+            -ms-user-select: none; /* For Internet Explorer/Edge */
         }
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+        #particles-js {
+            position: absolute;
             width: 100%;
-            max-width: 900px;
-            margin-bottom: 20px;
-        }
-        .card {
-            width: calc(33.33% - 20px);
-            padding: 20px 50px;
-            border-radius:10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-            color: white;
-        }
-        .card:hover {
-            transform: scale(1.2);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            background: linear-gradient(135deg, #d3b7d4, #E6E6FA);
-        }
-        .card:active {
-            transform: translateY(+130px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card1 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card2 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card3 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card4 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card5 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
-        }
-        .card6 {
-            background: linear-gradient(135deg, #d3b7d4, #6367a2);
+            height: 100%;
+            z-index: -1;
         }

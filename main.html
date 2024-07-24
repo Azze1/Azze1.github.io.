@@ -6,53 +6,64 @@
     <title>Card Layout App</title>
     <link rel="stylesheet" href="main/CSS/main.css">
     <link rel="stylesheet" href="main/CSS/button.css">
+    <link rel="stylesheet" href="main/CSS/countButton.css">
+    <link rel="stylesheet" href="main/CSS/count.css">
+    <link rel="stylesheet" href="main/CSS/card.css">
     <style>
-
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+        .Card-count {
+            cursor: pointer;
+            transition: transform 0.5s;
         }
-
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
     <div class="card-container">
+        <div class="Card-count">
+            <h1 id="Card-count-Text">0</h1>
+        </div>
+        <div class="Card-count-Energy">
+            <h3 id="Card-count-Text-Energy">🗲</h3>
+        </div>
         <div class="card card1">
-            <h2>Card 1</h2>
-            <p id="Card-Text1">This is the content for card 1.</p>
+            <h2>Auto Count + </h2>
+            <p id="Card-Text1">
+                Автоматически добывает Z-коины
+            <hr>
+                2.80 Z | 60 sec
+            </p>
         </div>
         <div class="card card2">
             <h2>Card 2</h2>
-            <p id="Card-Text2">This is the content for card 2.</p>
+            <p id="Card-Text2">60 sec</p>
         </div>
         <div class="card card3">
             <h2>Card 3</h2>
-            <p id="Card-Text3">This is the content for card 3.</p>
+            <p id="Card-Text3">60 sec</p>
         </div>
         <div class="card card4">
             <h2>Card 4</h2>
-            <p id="Card-Text4">This is the content for card 4.</p>
+            <p id="Card-Text4">60 sec</p>
         </div>
         <div class="card card5">
             <h2>Card 5</h2>
-            <p id="Card-Text5">This is the content for card 5.</p>
+            <p id="Card-Text5">60 sec</p>
         </div>
         <div class="card card6">
             <h2>Card 6</h2>
-            <p id="Card-Text6">This is the content for card 6.</p>
+            <p id="Card-Text6">60 sec</p>
         </div>
     </div>
     <div id="Contaner-Button">
         <div class="Click-button">
             <button id="Main-Button">
-                <h2>Z-НУТЬ</h2>
+                <h2>Z-НУТЬ</h2><script src="main/JS/Button_Click.js"></script>
             </button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main/JS/CONNECTEDPARTICLES.js"></script>
+    <script src="main/JS/Card1_AutoCount.js"></script>
+    <script src="main/JS/CountBuff.js"></script>
 </body>
 </html>

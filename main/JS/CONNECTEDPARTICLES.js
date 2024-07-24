@@ -1,3 +1,8 @@
+    let GLOBAL_BUTTON_Count = 0.05;
+
+    let timeLeft = 60; // Объявляем переменную timeLeft в глобальной области видимости
+    let currentCount = 0; // Объявляем переменную currentCount в глобальной области видимости
+
         particlesJS("particles-js", {
             "particles": {
                 "number": {
